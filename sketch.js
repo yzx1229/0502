@@ -25,12 +25,12 @@ function draw() {
   let x = (width - capture.width) / 2;
   let y = (height - capture.height) / 2;
   
-  // 翻轉畫布以顯示鏡像
-  push();
-  translate(width, 0); // 將畫布原點移到右上角
-  scale(-1, 1); // 水平翻轉畫布
-  image(capture, x, y, capture.width, capture.height); // 繪製影像
-  pop();
+ // 翻轉畫布以顯示鏡像
+  //push();
+  //translate(width, 0); // 將畫布原點移到右上角
+  //scale(-1, 1); // 水平翻轉畫布
+  //image(capture, x, y, capture.width, capture.height); // 繪製影像
+  //pop();
 
   // 在視訊畫面上方繪製 overlayGraphics
   image(overlayGraphics, x, y, capture.width, capture.height);
