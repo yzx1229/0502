@@ -39,9 +39,15 @@ function draw() {
   for (let i = 0; i < graphics.width; i += 20) {
     for (let j = 0; j < graphics.height; j += 20) {
       let col = capture.get(i, j); // 從 capture 中取得顏色
+      
+      // 繪製方框
       graphics.fill(col);
       graphics.noStroke();
-      graphics.ellipse(i + 10, j + 10, 15, 15); // 繪製圓形
+      graphics.rect(i, j, 18, 18); // 繪製寬為 18 的方框
+      
+      // 繪製中間的黑色圓
+      graphics.fill(0); // 設定顏色為黑色
+      graphics.ellipse(i + 9, j + 9, 5, 5); // 繪製半徑為 5 的圓
     }
   }
   
