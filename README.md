@@ -4,6 +4,7 @@
 產生一個全螢幕的畫布，
 背景顏色為d6ccc2，擷取攝影機的影像，
 正常的顯示在視窗的中間，影像畫面寬高為視窗大小的65%，請把程式碼寫在sketch.js內
+
 createCanvas(windowWidth, windowHeight)：設定畫布大小為全螢幕。
 background('#d6ccc2')：設定背景顏色為 #d6ccc2。
 createCapture(VIDEO)：啟用攝影機擷取影像。
