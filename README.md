@@ -11,6 +11,7 @@ createCapture(VIDEO)：啟用攝影機擷取影像。
 capture.size(windowWidth * 0.65, windowHeight * 0.65)：將攝影機影像大小設為視窗的 65%。
 image(capture, x, y, capture.width, capture.height)：將攝影機影像繪製在畫布中央。
 windowResized：當視窗大小改變時，重新調整畫布與影像大小。
+***
 ```javascript=
 let capture;
 
